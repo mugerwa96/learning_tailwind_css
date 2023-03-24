@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custome styles */
+@layer components{
+    .btn{
+        @apply
+             px-4 py-2 text-sm font-semibold focus:outline-none transition hover:-translate-y-0.5  uppercase tracking-wide shadow-lg inline-block rounded-lg sm:text-base
+        
+    }
+    .btn-primary{
+       @apply bg-indigo-600  active:bg-indigo-800 hover:bg-indigo-700 text-white 
+    }
+    .btn-secondary{
+       @apply bg-gray-600  active:bg-gray-800 hover:bg-gray-700 text-white 
+    }
+    .site-primary{
+        @apply text-indigo-500
+    }
+    .site-secondary{
+        @apply text-gray-900   
+    }
+    .card{
+        @apply flex gap-2 items-center  mt-4 bg-slate-100 h-auto  relative overflow-hidden rounded-md shadow-md transition-all hover:-translate-y-1   hover:cursor-pointer
+    }
+
+    .link{
+        @apply  text-center p-2 hover:text-red-900 transition duration-200 cursor-pointer
+    }
+}
